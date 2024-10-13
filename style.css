@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+::selection {
+  background-color: #ffa500;
+  color: #1c1010;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  color: #fff;
+  overflow: hidden;
+  background-color: #1c1010;
+}
+
+/* hna rah ndiro styling ta3 navbar */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 90px;
+  height: 110px;
+  background: transparent;
+  width: 100%;
+  z-index: 99999 !important;
+}
+
+/* hadoma le liens */
+.links {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* hna ra7 ne7iw black line w ywli white  */
+.links > * {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transform: translateY(-80px);
+}
+
+.links > *:hover {
+  color: #ffa500;
+}
+
+.logo {
+  width: 15%;
+}
+
+/* hna dok nakhdmo 3la l header */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 150px;
+  width: 100%;
+  height: 75vh;
+}
+
+/* nbdaw b la gauche bayna */
+.top-left-side {
+  position: relative;
+  width: 70%;
+  height: fit-content;
+}
+
+.arthur {
+  width: 100%;
+  opacity: 1;
+  transform: translateY(-50px); /* hna 3la jal animation */
+  opacity: 0; /* hna 3la jal animation */
+}
+
+.rockstar {
+  position: absolute;
+  left: -10%; /* hna 3la jal animation */
+  top: 2%;
+  width: 20%;
+  opacity: 0; /* hna 3la jal animation */
+}
+
+.arthur-letters {
+  position: absolute;
+  right: 0;
+  top: 10%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.arthur-letters span {
+  font-size: 28px;
+  font-weight: 500;
+  opacity: 0; /* hna 3la jal animation */
+  transform: translateX(-20px); /* hna 3la jal animation */
+}
+
+.bottom-left-side {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.bottom-left-side button {
+  background: transparent;
+  color: #fff;
+  border: 0; /* hna 3la jal animation */
+  cursor: pointer;
+  width: 0; /* hna 3la jal animation */
+  padding: 0; /* hna 3la jal animation */
+  overflow: hidden; /* hna 3la jal animation */
+  position: relative;
+}
+
+.bottom-left-side button::after {
+  content: "";
+  width: 0;
+  height: 100%;
+  background-color: #ffa500;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: width 0.2s linear;
+}
+.bottom-left-side button:hover::after {
+  width: 100%;
+  transition: width 0.2s linear;
+}
+
+/* doka hna la droite */
+.right-side {
+  display: flex;
+  flex-direction: column;
+  width: 38%;
+}
+
+.right-side h1 {
+  font-size: 48px;
+  font-weight: 600;
+  transform: translateY(-50px); /* hna 3la jal animation */
+  opacity: 0; /* hna 3la jal animation */
+}
+
+.right-side p {
+  margin: 5px 0;
+  font-size: 14px;
+  transform: translateX(-50px);
+  opacity: 0;
+}
+
+.right-side button {
+  cursor: pointer;
+  margin-top: 15px;
+  background-color: transparent;
+  color: #ffa500;
+  letter-spacing: 8px;
+  width: fit-content;
+  border: none;
+  font-weight: 700;
+  opacity: 0; /* hna 3la jal animation */
+  transform: translateY(-50px); /* hna 3la jal animation */
+}
+
+.social-links {
+  position: absolute;
+  bottom: 20px;
+  right: 10%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.social-links img {
+  width: 20px;
+  height: 20px;
+  transform: translateY(80px); /* hna 3la jal animation */
+  opacity: 0; /* hna 3la jal animation */
+}
+
+/* w hna hadok chba7 li yzyn website w maywlish yban 7erfi hhhh chemma  */
+.line {
+  position: absolute;
+  top: -2%;
+  left: -15%;
+  width: 1px;
+  height: 0; /* hna 3la jal animation  h:450*/
+  background-color: #fff;
+}
+
+.red-line {
+  width: 0; /* hna 3la jal animation  w:220*/
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 12%;
+  background-color: #8c1313;
+  z-index: -4;
+}
+
+.text {
+  position: absolute;
+  top: 20%;
+  right: -33%;
+  font-size: 12rem;
+  transform: translateY(-90px);
+  width: 100%;
+  z-index: -3;
+  color: transparent;
+  opacity: 0; /* hna 3la jal animation */
+  -webkit-text-stroke: 1px #fff;
+}
